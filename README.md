@@ -1,4 +1,4 @@
-din utbildning och klass
+Webbutveckling via e-handel och WIEG16 <br> 
 uppgiften
 kort beskrivning av produkten, dess syfte och funktionalitet
 punktlista med vilka teknologier du använt
