@@ -4,8 +4,8 @@ Målet är att bygga en egen liten CRUD-applikation i PHP som använder OOP och 
  
 (fattar inte)kort beskrivning av produkten, dess syfte och funktionalitet <br> 
 <ul> 
-<li> dator <li> 
-<ul>
+<li> dator </li> 
+</ul>
 Catherine Solis Abas <br> 
 cattissolis@gmail.com <br> 
 Min linkedin: www.linkedin.com/in/catherine-solis-7a3739135/
