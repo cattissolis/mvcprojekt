@@ -2,11 +2,22 @@
 
 class Model
 {
-   public function getAllDjur($id, $name, $year, $legs, $type)
+    private $db;
+
+    public function __construct(Database $db) {
+        $this->db = $db;
+    }
+
+   public function getAllDjur()
    {
-       $get_stm = $this->prepare('SELECT * FROM `djur`');
+       $get_stm = $this->db->prepare('SELECT * FROM `djur`');
        $get_stm->execute();
-       return $get_stm; setFetchMode(PDO:: FETCH_CLASS, 'djur');
+       $get_stm->setFetchMode(PDO:: FETCH_ASSOC);
+       $djur = $get_stm->fetchAll();
+       $djur = array_map(function($item) {
+        return new Djur($item['id'],$item['name'],$item['year'],$item['legs'],$item['type']);
+       }, $djur);
+       return $djur; 
    }
 }
 

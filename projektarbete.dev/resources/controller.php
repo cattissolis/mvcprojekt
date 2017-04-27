@@ -18,17 +18,25 @@ class Controller
             //require_once('templates/start.php');
         }
     }
+    
+
     public function getAllDjur()
     {
         return $this->model->getAllDjur();
+        global $db;
     }
-    public function editDjur(){
+    public function updateDjur(){
         return $this->model->updateDjur();
+         global $db;
     }
-    public function deleteDjur(){
+
+    public function deleteById(){
         return $this->model->deleteById();
+         global $db;
     }
+
     public function createDjur(){
-        return $this->model->saveDjur();
+        return $this->model->createDjur();
+         global $db;
     }
 }
