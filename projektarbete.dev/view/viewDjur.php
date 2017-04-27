@@ -32,6 +32,7 @@ $djur = $this->getAllDjur();
         <td><?= $djur->getYear()?></td>
         <td><?= $djur->getLegs()?></td>
         <td><?= $djur->getType()?></td>
+       <td><a href="\crud\delete.php?delete&id=<?= $djur->getId() ?>">Ta bort</a></td>
 
     </tr>
 </tbody>
